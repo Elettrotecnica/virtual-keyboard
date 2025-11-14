@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Keyboard PWA</title>
+
+  <!-- PWA manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="icon" href="icons/icon.ico">
+
+  <!-- iOS PWA support -->
+  <meta name="meta-mobile-web-app-capable" content="yes">
+  <meta name="meta-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="meta-mobile-web-app-title" content="KeyboardPWA">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+  <!-- Simple Keyboard CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@3.8.89/build/css/index.min.css">
+  <link rel="stylesheet" href="src/index.css">
+</head>
+ 
+<body style="margin: 20px; font-family: sans-serif;">
+
+  <div class="textarea-wrapper" style="position: relative; width: 100%;">
+    <textarea class="input styled-input" placeholder="Tap on the virtual keyboard to start"></textarea>
+    <button class="copy-btn">Copy</button>
+    <button class="clear-btn">Clear</button>
+  </div>
+
+  <div class="simple-keyboard"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@3.8.89/build/index.min.js"></script>
+  <script src="src/index.js"></script>
+</body>
+</html>
