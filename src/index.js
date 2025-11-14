@@ -5,6 +5,7 @@ const Keyboard = window.SimpleKeyboard.default;
 let keyboard = new Keyboard({
   onChange: input => onChange(input),
   onKeyPress: button => onKeyPress(button),
+  newLineOnEnter: true,
   theme: "hg-theme-default hg-theme-ios",
   layout: {
     default: [
@@ -71,12 +72,6 @@ function handleLayout(button) {
 
     if (button === "{smileys}")
         name = current === "smileys" ? "default" : "smileys";
-
-    if (button === "{enter}") {
-	const value = `${keyboard.getInput()}\n`;
-	document.querySelector(".input").value = value
-	keyboard.setInput(value);
-    }
 
     if (button === "{downkeyboard}") {
 	window.open('', '_self', '');
