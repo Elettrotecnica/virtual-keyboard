@@ -1,13 +1,15 @@
 const CACHE_NAME = "keyboard-pwa-v2";
 const FILES_TO_CACHE = [
     "./",
-    ".src/index.js",
-    ".src/index.css",
+    "./src/index.js",
+    "./src/index.css",
     "./index.html",
     "./manifest.json",
     "./icons/icon-192.png",
     "./icons/icon-512.png",
-    "./icons/icon.ico"
+    "./icons/icon.ico",
+    "https://cdn.jsdelivr.net/npm/simple-keyboard@3.8.89/build/css/index.min.css",
+    "https://cdn.jsdelivr.net/npm/simple-keyboard@3.8.89/build/index.min.js"
 ];
 
 // Install SW
