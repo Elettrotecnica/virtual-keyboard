@@ -1,4 +1,4 @@
-const CACHE_NAME = "keyboard-pwa-v2";
+const CACHE_NAME = "keyboard-pwa-v3";
 const FILES_TO_CACHE = [
     "./",
     "./src/index.js",

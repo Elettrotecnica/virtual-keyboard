@@ -4,7 +4,7 @@ body {
 
 .styled-input {
     width: 99%;
-    height: 120px;
+    height: 4em;
     padding: 0.5%;
     font-size: 22px;
     border: none;
@@ -97,10 +97,8 @@ body {
   box-shadow: none;
   font-weight: 400;
   font-size: 20px;
-  max-width: 60px;
-  min-width: 60px;
-  height: 60px;
-  min-height: 60px;
+  aspect-ratio: 1 / 1;
+  width: 6%
 }
 .simple-keyboard.hg-theme-ios.hg-theme-default .hg-button:active,
 .simple-keyboard.hg-theme-ios.hg-theme-default .hg-button:focus {
@@ -116,15 +114,15 @@ body {
   background-color: #ffffff;
 }
 .simple-keyboard.hg-theme-ios.hg-theme-default .hg-button-space {
-  max-width: 448px;
-  min-width: 448px;
+    aspect-ratio: auto;
+    width: 35%;
 }
 .simple-keyboard.hg-theme-ios.hg-theme-default .hg-button-enter {
-  max-width: 110px;
-  min-width: 110px;
+    aspect-ratio: auto;
+    width: 10%;
 }
 .simple-keyboard.hg-theme-ios.hg-theme-default .hg-button-altright,
 .simple-keyboard.hg-theme-ios.hg-theme-default .hg-button-back {
-  min-width: 80px;
-  max-width: 80px;
+    aspect-ratio: auto;
+    width: 8%;
 }
